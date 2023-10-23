@@ -11,12 +11,14 @@
 }
 
 body {
+
     height: 100vh;
-    background-image: url(/images/background\ das\ att.jpg);
+    background-image: url(../images/background\ das\ att.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    flex-direction: column;                
+    flex-direction: column;          
+
 }
 
 header {

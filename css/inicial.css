@@ -1,0 +1,754 @@
+* {
+    /* Estilos gerais para todos os dispositivos */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Configurações gerais para o corpo da página */
+body {
+    font-family: Trebuchet MS, sans-serif;
+    /* Define a fonte do texto */
+    background: url('../images/background\ do\ site2.jpg') no-repeat;
+    background-size: 100%;
+    /* Define a imagem de fundo */
+    background-color: rgb(0, 0, 0);
+    /* Define a cor de fundo */
+    max-width: 100%;
+}
+
+/* Estilos para o cabeçalho */
+.header {
+    display: flex;
+    /* Define um layout flexível para o cabeçalho */
+    padding: 10px;
+    width: 100%;
+}
+
+.header img {
+    border-radius: 55%;
+    /* Define um raio de borda para a imagem */
+    padding: 15px;
+    /* Adiciona um preenchimento interno à imagem */
+}
+/* Estilos para a lista de navegação */
+li {
+    list-style-type: none;
+    /* Remove os marcadores de lista */
+    margin: 0;
+    /* Define margem zero */
+    padding: 0;
+    /* Define preenchimento zero */
+    overflow: hidden;
+    /* Controla o overflow dos elementos filho */
+   
+}
+
+li {
+    float: left;
+    /* Define os elementos da lista como flutuantes para formar uma barra horizontal */
+}
+
+/* Estilos para os links na lista de navegação e para os elementos de dropdown */
+li a,
+.dropdown {
+    display: inline-block;
+    /* Define os links e elementos de dropdown como blocos em linha */
+    color: rgb(53, 47, 47);
+    /* Define a cor do texto */
+    text-align: center;
+    /* Centraliza o texto horizontalmente */
+    padding: 7px 9px;
+    /* Define o preenchimento interno */
+    text-decoration: none;
+    /* Remove sublinhado padrão dos links */
+}
+
+li a:hover,
+.dropdown:hover .dropdown {
+    background-color: rgb(209, 144, 144);
+    /* Define a cor de fundo ao passar o mouse sobre os links */
+    border-radius: 10%;
+    /* Define um raio de borda arredondada */
+}
+
+/* Estilos para o conteúdo do dropdown */
+.dropdown-content {
+    display: none;
+    /* Esconde o conteúdo do dropdown por padrão */
+    position: absolute;
+    /* Define a posição absoluta */
+    background-color: #f9f9f9;
+    /* Define a cor de fundo */
+    min-width: 160px;
+    /* Define a largura mínima */
+    box-shadow: 0px 8px 16px 0px rgba(226, 113, 113, 0.459);
+    /* Adiciona uma sombra */
+}
+
+.dropdown-content a {
+    color: rgb(0, 0, 0);
+    /* Define a cor do texto */
+    text-align: none;
+    /* Remove a centralização do texto */
+    display: block;
+    /* Define como bloco */
+    text-align: left;
+    /* Alinha o texto à esquerda */
+}
+
+/* Estilos para links dentro do dropdown ao passar o mouse */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    /* Define a cor de fundo ao passar o mouse sobre os links */
+    border-radius: 22%;
+    /* Define um raio de borda arredondada */
+}
+
+/* Exibe o conteúdo do dropdown quando o elemento pai é hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    /* Exibe o conteúdo do dropdown */
+    border-radius: 5%;
+    /* Define um raio de borda arredondada */
+}
+
+.navbar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 2em;
+}
+
+.content-box {
+    padding: 4em;
+    margin: 10em;
+}
+
+.title-box {
+    color: white;
+    margin-left: -20px;
+    font-family: 'Plexus Sans', sans-serif;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #FF0000;
+}
+
+
+.btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.btn.elastico {
+
+    transition: all 0.6s cubic-bezier(0.65, -0.25, 0.25, 1.95);
+    font-size: 0.9em;
+    font-family: 'open_sansregular';
+    color: #ccc;
+    padding: 0.8em 1.2em;
+    background: #242424;
+    text-transform: uppercase;
+
+}
+
+.btn.elastico:hover,
+.btn.elastico:focus,
+.btn.elastico:active {
+
+    letter-spacing: 0.220rem;
+}
+
+.content {
+    height: 188px;
+    background-attachment: scroll;
+    background-color: rgb(31, 33, 41);
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(145, 149, 171);
+}
+
+.t1 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    line-height: 36px;
+    background-attachment: scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(242, 244, 251);
+    height: 108px;
+    width: 486.656px;
+    padding-top: 38px;
+    padding-left: 100px;
+    text-shadow: 2px 2px 2px #FF0000;
+}
+
+.a1 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 300px;
+}
+
+.a1>a {
+    text-decoration: none;
+    color: #ffffff05;
+}
+
+.a1:hover {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.explicacao {
+    height: 100%;
+    background: rgb(40, 44, 54);
+    padding: 80px;
+    text-shadow: 10px 10px 10px #FF0000;
+}
+
+.explicacao>h1 {
+    color: rgb(255, 0, 0);
+    text-align: center;
+    text-shadow: 2px 5px 4px #333, 5px 5px 5px #9b3617;
+    margin-bottom: 70px;
+}
+
+.texto {
+    display: flex;
+    color: #d2ebff;
+    text-align: center;
+    font-family: proxima-nova, sans-serif, Helvetica, arial, sans-serif;
+    white-space: pre-line;
+    text-shadow: 2px 5px 3px #333;
+    padding: 10px;
+}
+
+.texto>p {
+    margin: 50px;
+    margin-top: -10px;
+    text-shadow: 3px 3px 5px #72429e;
+    font-weight: bold;
+}
+
+.texto>img {
+    margin-left: -40px;
+}
+
+.bot>img {
+    float: right;
+    display: block;
+    margin-top: -93px;
+    margin-right: 20em;
+    border-radius: 30%;
+
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    margin-left: 51.5em;
+    border: 2px solid #000000;
+    box-shadow: 4px 5px 10px cornflowerblue;
+}
+
+.bot:hover .dropdown-content1 {
+    display: inline-block;
+}
+
+.discord>img {
+    float: right;
+    margin-top: -93px;
+    margin-right: 11.8em;
+    border-radius: 30%;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    margin-left: 62em;
+    border: 2px solid #000000;
+    box-shadow: 4px 5px 10px cornflowerblue;
+}
+
+.discord:hover .dropdown-content2 {
+    display: inline-block;
+}
+
+.marcus>img {
+    float: right;
+    margin-top: -93px;
+    margin-right: 30em;
+    border-radius: 30%;
+    width: 80px;
+}
+
+.dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    margin-left: 44em;
+    padding-bottom: -30px;
+    border: 2px solid #000000;
+    box-shadow: 4px 5px 10px cornflowerblue;
+}
+
+.marcus:hover .dropdown-content3 {
+    display: inline-block;
+}
+
+.disc {
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.quirk {
+    margin-top: 100px;
+    background: rgb(37, 41, 49);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(109, 84, 134, 0.1);
+    /* Sombra suave */
+}
+
+.quirk>h1 {
+    color: rgb(255, 0, 0);
+    text-align: center;
+    text-shadow: 2px 5px 4px #333, 5px 5px 5px #9b3617;
+}
+
+.quirk>h3 {
+    color: rgb(76, 214, 203);
+    text-align: center;
+    text-shadow: 2px 5px 4px #7e5d5d, 5px 5px 5px #381409;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.texto1 {
+    display: flex;
+    color: #d2ebff;
+    font-family: proxima-nova, sans-serif, Helvetica, arial, sans-serif;
+    white-space: pre-line;
+    text-shadow: 2px 5px 3px #333;
+}
+
+.texto1>img {
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-top: 90px;
+    border: 1px solid #ddd;
+    /* Borda fina ao redor das imagens */
+    border-radius: 10%;
+    max-width: 100%;
+}
+
+.texto1>p {
+    margin-top: 175px;
+    margin-left: 85px;
+    text-align: center;
+    font-family: Palatino, URW Palladio L, serif;
+    text-shadow: 2px 5px 4px #8f5d5d, 5px 5px 5px #411103;
+    white-space: nowrap;
+    /* E  vita quebrar o texto em várias linhas */
+    font-size: 20px;
+}
+
+.texto1>h4 {
+    font-family: Andale Mono, monospace;
+    font-size: 33px;
+    color: rgb(76, 214, 203);
+    position: absolute;
+    z-index: 1;
+    margin-left: 37rem;
+    margin-top: 7rem;
+    text-shadow: 2px 3px 3px rgb(58, 55, 58);
+}
+
+.texto2 {
+    display: flex;
+    color: #d2ebff;
+    font-family: proxima-nova, sans-serif, Helvetica, arial, sans-serif;
+    white-space: pre-line;
+    text-shadow: 2px 5px 3px #333;
+}
+
+.texto2>img {
+    margin-top: 90px;
+    margin-left: 120px;
+    border: 1px solid #ddd;
+    /* Borda fina ao redor das imagens */
+    border-radius: 10%;
+    max-width: 100%;
+}
+
+.texto2>p {
+    margin-top: 225px;
+    margin-left: 50px;
+    text-align: center;
+    font-family: Palatino, URW Palladio L, serif;
+    text-shadow: 2px 5px 4px #8f5d5d, 5px 5px 5px #411103;
+    white-space: nowrap;
+    /* E  vita quebrar o texto em várias linhas */
+    font-size: 18px;
+}
+
+.texto2>h4 {
+    font-family: Andale Mono, monospace;
+    font-size: 33px;
+    color: rgb(76, 214, 203);
+    text-shadow: 2px 3px 5px rgb(253, 21, 214);
+    position: absolute;
+    z-index: 1;
+    margin-left: 15rem;
+    margin-top: 10rem
+}
+
+
+.texto3 {
+    display: flex;
+    color: #d2ebff;
+    font-family: proxima-nova, sans-serif, Helvetica, arial, sans-serif;
+    white-space: pre-line;
+    text-shadow: 2px 5px 3px #333;
+}
+
+.texto3>img {
+    margin-top: 90px;
+    margin-left: 50px;
+    border: 1px solid #ddd;
+    /* Borda fina ao redor das imagens */
+    border-radius: 10%;
+    max-width: 100%;
+}
+
+.texto3>p {
+    margin-top: 255px;
+    margin-left: 30px;
+    text-align: center;
+    font-family: Palatino, URW Palladio L, serif;
+    text-shadow: 2px 5px 4px #8f5d5d, 5px 5px 5px #411103;
+    white-space: nowrap;
+    /* E  vita quebrar o texto em várias linhas */
+    font-size: 18px;
+}
+
+.texto3>h4 {
+    font-family: Andale Mono, monospace;
+    font-size: 33px;
+    color: rgb(76, 214, 203);
+    text-shadow: 2px 3px 5px rgb(136, 7, 7);
+    position: absolute;
+    z-index: 1;
+    margin-left: 36rem;
+    margin-top: 12rem
+}
+
+
+.texto4 {
+    display: flex;
+    color: #d2ebff;
+    font-family: proxima-nova, sans-serif, Helvetica, arial, sans-serif;
+    white-space: pre-line;
+    text-shadow: 2px 5px 3px #333;
+}
+
+.texto4>img {
+    margin-top: 100px;
+    margin-left: 120px;
+    border: 1px solid #ddd;
+    /* Borda fina ao redor das imagens */
+    border-radius: 10%;
+    max-width: 100%;
+}
+
+.texto4>p {
+    margin-top: 240px;
+    margin-left: 100px;
+    text-align: center;
+    font-family: Palatino, URW Palladio L, serif;
+    text-shadow: 2px 5px 4px #8f5d5d, 5px 5px 5px #411103;
+    white-space: nowrap;
+    /* E  vita quebrar o texto em várias linhas */
+    font-size: 18px;
+}
+
+.texto4>h4 {
+    font-family: Andale Mono, monospace;
+    font-size: 33px;
+    color: rgb(76, 214, 203);
+    text-shadow: 2px 3px 5px rgb(207, 112, 23);
+    position: absolute;
+    z-index: 1;
+    margin-left: 16rem;
+    margin-top: 10rem
+}
+
+.texto5 {
+    display: flex;
+    color: #d2ebff;
+    font-family: proxima-nova, sans-serif, Helvetica, arial, sans-serif;
+    white-space: pre-line;
+    text-shadow: 2px 5px 3px #333;
+}
+
+.texto5>img {
+    margin-top: 90px;
+    margin-left: 80px;
+    border: 1px solid #ddd;
+    /* Borda fina ao redor das imagens */
+    border-radius: 10%;
+    max-width: 100%;
+}
+
+.texto5>p {
+    margin-top: 150px;
+    margin-left: 80px;
+    text-align: center;
+    font-family: Palatino, URW Palladio L, serif;
+    text-shadow: 2px 5px 4px #8f5d5d, 5px 5px 5px #411103;
+    white-space: nowrap;
+    /* E  vita quebrar o texto em várias linhas */
+    font-size: 18px;
+}
+
+.texto5>h4 {
+    font-family: Andale Mono, monospace;
+    font-size: 33px;
+    color: rgb(76, 214, 203);
+    text-shadow: 2px 3px 5px rgb(23, 219, 39);
+    position: absolute;
+    z-index: 1;
+    margin-left: 34rem;
+    margin-top: 5rem
+}
+
+.content-2 {
+    height: 900px;
+    background-attachment: scroll;
+    background: rgb(37, 41, 49);
+    background-position: 0% 0%;
+    color: rgb(145, 149, 171);
+}
+
+.explicacao2 {
+    font-family: Georgia, serif;
+    text-align: center;
+    /* Centralizar o conteúdo dentro do container */
+    padding: 20px;
+    /* Espaçamento interno */
+    border-radius: 10px;
+    /* Cantos arredondados */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+}
+
+.explicacao2>h1 {
+    text-align: center;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 5px 4px #333, 5px 5px 5px #9b3617;
+    padding-top: 20px;
+}
+
+.explicacao2>p {
+    text-align: center;
+    color: rgb(76, 214, 203);
+    font-family: Palatino, URW Palladio L, serif;
+    text-shadow: 2px 5px 4px #a8771c, 5px 5px 5px #1a0d09;
+    white-space: nowrap;
+    /* E  vita quebrar o texto em várias linhas */
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Estilização das Linhas Horizontais */
+hr {
+    border: 1px solid #ddd;
+    /* Linha horizontal cinza */
+    margin: 20px 0;
+}
+
+/* Estilização dos Marcadores de Usuário */
+mark {
+    background-color: #ffd700;
+    /* Cor amarela para marcadores de usuário */
+    padding: 2px;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Sublinhar links ao passar o mouse sobre eles */
+}
+
+/* Estilização do Rodapé (opcional) */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    /* Cor de fundo escura para o rodapé */
+    color: #fff;
+    /* Cor do texto do rodapé */
+}
+
+/* Estilo para os marcadores de comando */
+.explicacao2 mark {
+    background-color: #f2f2f2;
+    /* Cor de fundo do marcador */
+    padding: 2px 5px;
+    /* Espaçamento interno do marcador */
+    border-radius: 3px;
+    /* Cantos arredondados do marcador */
+}
+
+/* Estilo para as imagens */
+.imagens > img {
+    display: inline-block;
+    /* Colocar as imagens lado a lado */
+    margin-right: 20px;
+    /* Espaço entre as imagens */
+    vertical-align: top;
+    /* Alinhar as imagens ao topo */
+    border: 2px solid #333;
+    /* Borda ao redor das imagens */
+    border-radius: 10px;
+    /* Cantos arredondados */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+    transition: transform 0.3s ease-in-out;
+    /* Animação de escala suave */
+}
+
+/* Efeito de escala ao passar o mouse sobre as imagens */
+.imagens > img:hover {
+    transform: scale(1.05);
+    /* Aumentar o tamanho em 5% ao passar o mouse */
+}
+
+/* Estilo para o container de explicação */
+.explicacao2 {
+    text-align: center;
+    /* Centralizar o conteúdo dentro do container */
+    padding: 20px;
+    /* Espaçamento interno */
+    border-radius: 10px;
+    /* Cantos arredondados */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+}
+
+.seta {
+    float: right;
+    margin-top: 50px;
+}
+
+/* Defina a animação "spin" */
+@keyframes spin {
+    0% {
+      transform: rotate(0deg); /* Rotação inicial */
+    }
+    100% {
+      transform: rotate(360deg); /* Rotação completa (uma volta completa) */
+    }
+  }
+  
+  /* Estilize a seta e aplique a animação */
+ .seta, .setaexp {
+    float: right;
+    margin-top: 50px;
+    margin-right: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    animation: spin 5s linear infinite; /* Aplica a animação "spin" */
+  }
+  
+/* Estilo para o contêiner de contatos */
+.suport {
+    text-align: center;
+    
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 70px;
+}
+
+/* Estilo para o título "Contatos" */
+.suport h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para os detalhes de contato */
+.suport p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o link do seu Discord */
+.suport #meu-discord {
+    color: #0099ff; /* Cor do link */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transição suave da cor ao passar o mouse */
+}
+
+.suport #meu-discord:hover {
+    color: #0077cc; /* Cor do link ao passar o mouse */
+}
+
+/* Estilo para o link do Discord de Marcus */
+.suport #discord-marcus {
+    color: #ffcc00; /* Cor do link */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transição suave da cor ao passar o mouse */
+}
+
+.suport #discord-marcus:hover {
+    color: #ff9900; /* Cor do link ao passar o mouse */
+}
+
+@media (max-width: 600px) {
+  
+    .header {
+        padding: 10px 20px; /* Aumentar o preenchimento para melhorar o toque em dispositivos móveis */
+    }
+
+    .header img {
+        max-width: 60px; /* Reduzir o tamanho do logotipo */
+    }
+
+    li {
+        float: none;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .content-box {
+        padding: 0.5em; /* Reduzir ainda mais o preenchimento */
+        margin: 1em; /* Reduzir ainda mais as margens */
+    }
+
+    .title-box {
+        padding-bottom: 10px;
+    }
+
+    /* Mais ajustes específicos para telas pequenas */
+}

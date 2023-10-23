@@ -215,6 +215,7 @@ li a:hover,
     background: rgb(40, 44, 54);
     padding: 80px;
     text-shadow: 10px 10px 10px #FF0000;
+    text-align: center;
 }
 
 .explicacao>h1 {
@@ -324,6 +325,18 @@ li a:hover,
     margin: 20px;
     border-radius: 10px;
     box-shadow: 1px 1px 10px rgba(109, 84, 134, 0.1);
+    /* Sombra suave */
+    display: inline-block;
+    /* Colocar as imagens lado a lado */
+    margin-right: 20px;
+    /* Espaço entre as imagens */
+    vertical-align: top;
+    /* Alinhar as imagens ao topo */
+    border: 2px solid #333;
+    /* Borda ao redor das imagens */
+    border-radius: 10px;
+    /* Cantos arredondados */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
     /* Sombra suave */
 }
 

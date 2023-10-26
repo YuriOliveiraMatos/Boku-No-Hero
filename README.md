@@ -1,3 +1,3 @@
 # Himiko Toga
-[Um trabalho que tô tentando fazer dá certo
+[landing pagy para bot
 ](https://yurioliveiramatos.github.io/Boku-No-Hero/Himiko%20Toga.html)
